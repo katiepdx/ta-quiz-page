@@ -1,4 +1,4 @@
-import { countAsYes } from './utils.js'
+import { countAsYes, percentScore } from './utils.js'
 
 // import functions and grab DOM elements
 const button = document.querySelector('button');
@@ -26,5 +26,7 @@ button.addEventListener('click', () => {
 
   alert('The quiz has ended. Will display results below. :)')
 
-  result.textContent = `You answered ${score} question(s) correctly!`;
+  const percentCorrect = percentScore(score);
+
+  result.textContent = `You answered ${score} question(s) correctly! Percent correct: ${percentCorrect}`;
 });

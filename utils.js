@@ -7,3 +7,9 @@ export const countAsYes = (word => {
     return false;
   }
 })
+
+export const percentScore = (score => {
+  const decimalScore = Math.trunc((score / 3) * 100);
+  const percentScore = `${decimalScore}%`;
+  return percentScore;
+})
