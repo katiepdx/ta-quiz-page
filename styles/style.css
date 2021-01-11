@@ -117,3 +117,13 @@ footer {
     }
 
   }
+
+  .results-1 {
+      border: 2px solid tomato;
+  }
+  .results-2 {
+      border: 2px solid orange;
+  }
+  .results-3 {
+      border: 2px solid yellowgreen;
+  }

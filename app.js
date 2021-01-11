@@ -27,6 +27,10 @@ button.addEventListener('click', () => {
   alert('The quiz has ended. Will display results below. :)')
 
   const percentCorrect = percentScore(score);
+  const displayScore = result.textContent = `You answered ${score} question(s) correctly! Percent correct: ${percentCorrect}`;
+  
+  if (score === 1) return result.classList.add("results-1") && displayScore;
+  if (score === 2) return result.classList.add("results-2") && displayScore;
+  if (score === 3) return result.classList.add("results-3") && displayScore;
 
-  result.textContent = `You answered ${score} question(s) correctly! Percent correct: ${percentCorrect}`;
 });
